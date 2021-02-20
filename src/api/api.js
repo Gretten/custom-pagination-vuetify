@@ -1,6 +1,4 @@
-// const axios = require('axios')
-// import { generator } from '@/helpers/helpers.js'
-import { json } from '@/api/staticApi.js'
+import { json } from '@/api/data.js'
 
 export const fetchPartOf = (len) => {
     return new Promise((resolve) => {
