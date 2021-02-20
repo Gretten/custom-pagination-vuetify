@@ -36,7 +36,6 @@ import Pagination from '@/components/Pagination.vue'
         ],
         rows: [],
         paginationLength: 0,
-        currentPointer: 10,
       }
     },
     methods: {
@@ -54,6 +53,7 @@ import Pagination from '@/components/Pagination.vue'
                 .then(res => {
                     this.rows = res.data;
                     this.paginationLength = res.length;
+                    console.log(this.paginationLength)
             })
         }
     }

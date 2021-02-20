@@ -6,7 +6,7 @@ export const fetchPartOf = (len) => {
     return new Promise((resolve) => {
         resolve({
             data: json.slice(len, len + 10),
-            length: Math.floor(json.length / 10),
+            length: Math.floor((json.length-1) / 10),
         })
     })
 }
